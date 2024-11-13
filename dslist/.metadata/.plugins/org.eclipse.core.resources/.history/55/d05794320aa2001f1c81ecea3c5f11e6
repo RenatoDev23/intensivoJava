@@ -1,0 +1,15 @@
+package com.devsuperior.dslist.entities;
+
+public class Game {
+	
+	Long id;
+	String title;
+	Integer year;
+	String genre;
+	String platforms;
+	Double score;
+	String imgUrl;
+	String shortDescription;
+	String longDrescription;
+
+}
