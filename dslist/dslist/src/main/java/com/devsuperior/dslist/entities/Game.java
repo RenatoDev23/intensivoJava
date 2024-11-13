@@ -25,8 +25,13 @@ public class Game {
 	private String platforms;
 	private Double score;
 	private String imgUrl;
+	
+	@Column(columnDefinition = "TEXT")
+
 	private String shortDescription;
-	private String longDrescription;
+	
+	@Column(columnDefinition = "TEXT")
+	private String longDescription;
 
 	public Game() {
 	}
@@ -42,7 +47,7 @@ public class Game {
 		this.score = score;
 		this.imgUrl = imgUrl;
 		this.shortDescription = shortDescription;
-		this.longDrescription = longDrescription;
+		this.longDescription = longDrescription;
 	}
 
 	public Long getId() {
@@ -110,11 +115,11 @@ public class Game {
 	}
 
 	public String getLongDrescription() {
-		return longDrescription;
+		return longDescription;
 	}
 
 	public void setLongDrescription(String longDrescription) {
-		this.longDrescription = longDrescription;
+		this.longDescription = longDrescription;
 	}
 
 // para comparação de dos games para ver se eles ja existem
