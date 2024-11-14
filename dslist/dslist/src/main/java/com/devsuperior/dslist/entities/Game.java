@@ -114,12 +114,12 @@ public class Game {
 		this.shortDescription = shortDescription;
 	}
 
-	public String getLongDrescription() {
+	public String getLongDescription() {
 		return longDescription;
 	}
 
-	public void setLongDrescription(String longDrescription) {
-		this.longDescription = longDrescription;
+	public void setLongDescription(String longDescription) {
+		this.longDescription = longDescription;
 	}
 
 // para comparação de dos games para ver se eles ja existem

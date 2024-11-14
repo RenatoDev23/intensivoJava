@@ -9,6 +9,7 @@ import jakarta.persistence.Id;
 public class GameMinDto {
 	@Id
 	// indica para o banco como ele vai gerar o ID
+	// uma versao do game so que em uma versao menor
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	
 	private Long id;
