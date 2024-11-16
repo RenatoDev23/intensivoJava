@@ -1,12 +1,13 @@
 package com.devsuperior.dslist.dto;
 
 import com.devsuperior.dslist.entities.Game;
+import com.devsuperior.dslist.entities.GameList;
 
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
-public class GameMinDto {
+public class GameMinDTO {
 	@Id
 	// indica para o banco como ele vai gerar o ID
 	// uma versao do game so que em uma versao menor
@@ -21,18 +22,22 @@ public class GameMinDto {
 
 	private String shortDescription;
 	
-	public GameMinDto() {
+	public GameMinDTO() {
 		
 	}
 
 	//puxar as informações no Game que foi importado
-	public GameMinDto(Game entity) {
+	public GameMinDTO(Game entity) {
 		
 		id = entity.getId();
 		title =  entity.getTitle();
 		year = entity.getYear();
 		imgUrl = entity.getImgUrl();
 		shortDescription = entity.getShortDescription();
+	}
+
+	public GameMinDTO(GameList x) {
+		// TODO Auto-generated constructor stub
 	}
 
 	// necessario somente os get

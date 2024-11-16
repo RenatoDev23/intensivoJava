@@ -3,6 +3,7 @@ package com.devsuperior.dslist.dto;
 import org.springframework.beans.BeanUtils;
 
 import com.devsuperior.dslist.entities.Game;
+import com.devsuperior.dslist.entities.GameList;
 
 public class GameDTO {
 
@@ -20,9 +21,9 @@ public class GameDTO {
 		
 	}
 	
-	public GameDTO(Game entity){
+	public GameDTO(GameList result){
 		// faz uma copias de tudo que esat na entities
-		BeanUtils.copyProperties(entity, this);
+		BeanUtils.copyProperties(result, this);
 		
 	}
 

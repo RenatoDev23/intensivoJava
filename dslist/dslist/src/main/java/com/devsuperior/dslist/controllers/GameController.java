@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.devsuperior.dslist.dto.GameDTO;
-import com.devsuperior.dslist.dto.GameMinDto;
+import com.devsuperior.dslist.dto.GameMinDTO;
 import com.devsuperior.dslist.services.GameService;
 
 //porta de entra do back-end
@@ -29,10 +29,11 @@ public class GameController {
 		GameDTO result = gameService.findById(id);
 		return result;
 	}
+	
 
 	@GetMapping
-	public List<GameMinDto> findAll() {
-		List<GameMinDto> result = gameService.findAll();
+	public List<GameMinDTO> findAll() {
+		List<GameMinDTO> result = gameService.findAll();
 		return result;
 	}
 }
